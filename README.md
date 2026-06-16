@@ -1,36 +1,54 @@
 # Minimal Improved
 
-Minimal _Improved_. Super clean and minimal theme for Oh My ZSH. :sparkles:
+A clean and minimal theme for [Oh My Zsh](https://ohmyz.sh/), forked from [gdsrosa/minimal_improved](https://github.com/gdsrosa/minimal_improved).
 
-## Getting Started
+## Features
 
-Clone this repo:
+- 24-hour time display
+- Full path with `~` abbreviation
+- Git branch in brackets (e.g., `[main]`)
+- Dirty working tree indicator (`*`)
 
-```
-$ git clone https://github.com/gdsrosa/minimal_improved.git  
-$ cd minimal_improved
-```
-
-### Installing
-
-Once you're inside the `minimal_improved` directory, move the `minimal_improved.zsh-theme` file to your oh-my-zsh directory (usually `~/.oh-my-zsh`):
+Example prompt:
 
 ```
-$ mv minimal_improved.zsh-theme ~/.oh-my-zsh/themes/
+15:59 ~/code/shell/not_so_minimal_improved [master] $
 ```
 
-Then go to your `~/.zshrc` file and change `ZSH_THEME` to `minimal_improved` using your favorite editor:
+## Quick Install
 
 ```
-$ vim ~/.zshrc
-ZSH_THEME="minimal_improved"
+curl -fsSL https://raw.githubusercontent.com/orpiske/not_so_minimal_improved/master/install.sh | zsh
 ```
 
-For your changes to take immediate effect run `$ source ~/.zshrc` and your terminal will look like this:
+Then activate it:
 
-<p align="center" width="200" height="200">
-  <img src="https://raw.githubusercontent.com/gdsrosa/minimal_improved/master/minimal_improved_theme.png">
-  <br/>
-</p>
+```
+source ~/.zshrc
+```
 
-Enjoy!
+## Manual Install
+
+1. Clone this repo:
+
+```
+git clone https://github.com/orpiske/not_so_minimal_improved.git
+```
+
+2. Copy the theme to your Oh My Zsh themes directory:
+
+```
+cp not_so_minimal_improved/not_so_minimal_improved.zsh-theme ~/.oh-my-zsh/themes/
+```
+
+3. Set the theme in `~/.zshrc`:
+
+```
+ZSH_THEME="not_so_minimal_improved"
+```
+
+4. Apply:
+
+```
+source ~/.zshrc
+```
